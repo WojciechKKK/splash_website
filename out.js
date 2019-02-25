@@ -22434,16 +22434,17 @@ var ActuallyView = function (_Component) {
 
             var finalText = language == 'EN' ? _language2.default.en : _language2.default.pl;
             var allHeader = [_react2.default.createElement(_HeaderLogin2.default, { text: finalText.login }), _react2.default.createElement(_HeaderAbout2.default, { text: finalText.about }), _react2.default.createElement(_HeaderTeams2.default, { text: finalText.teams }), _react2.default.createElement(_HeaderWorks2.default, { text: finalText.works }), _react2.default.createElement(_HeaderContact2.default, { text: finalText.contact })];
-            var a = nameHeader.length - 1;
-            var b = nameHeader.substring(0, a);
-            console.log(b);
-            console.log(b.length);
+            //for github // opera
+            // let a = nameHeader.length-1;
+            // let b = nameHeader.substring(0,a);
+            // console.log(b)
+            // console.log(b.length)
 
             return _react2.default.createElement(
                 'div',
                 { id: 'view', className: 'actuallyView' },
                 allHeader.map(function (el, key) {
-                    if (_language2.default.en.header[key] == b || _language2.default.pl.header[key] == b) {
+                    if (_language2.default.en.header[key] == nameHeader || _language2.default.pl.header[key] == nameHeader) {
                         return _react2.default.createElement(
                             'div',
                             { key: key },
