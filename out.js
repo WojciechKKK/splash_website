@@ -1470,7 +1470,7 @@ var _react2 = _interopRequireDefault(_react);
 
 __webpack_require__(29);
 
-var _Design = __webpack_require__(57);
+var _Design = __webpack_require__(53);
 
 var _Design2 = _interopRequireDefault(_Design);
 
@@ -20986,7 +20986,7 @@ var options = {"hmr":true}
 options.transform = transform
 options.insertInto = undefined;
 
-var update = __webpack_require__(55)(content, options);
+var update = __webpack_require__(51)(content, options);
 
 if(content.locals) module.exports = content.locals;
 
@@ -21027,7 +21027,7 @@ exports = module.exports = __webpack_require__(32)(false);
 
 
 // module
-exports.push([module.i, "* {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n}\n\nbody {\n  font-family: 'Open Sans', sans-serif;\n  height: 100vh;\n  width: 100vw;\n  background: black;\n}\n\n/* body:after{\r\n    content: \"\";\r\n    background: black;\r\n    opacity: 0.6;\r\n    top: 0;\r\n    left: 0;\r\n    bottom: 0;\r\n    right: 0;\r\n    position: absolute;\r\n    z-index: -1\r\n} */\n\n.all {\n  width: 90vw;\n  margin: 0 auto;\n}\n\n.container {\n  text-align: center;\n  margin: 0 auto;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  flex-direction: column;\n  overflow: hidden;\n  height: 100vh;\n  width: 100%;\n  position: relative;\n}\n\n/* Nav Component */\n\n.navigation {\n  width: 100%;\n  position: absolute;\n  top: 0;\n  margin-top: 5vh;\n  /* background:red; */\n  /* display: flex;\r\n    align-items: center;\r\n    justify-content: center;\r\n    flex-direction: row; */\n}\n\n/* Logo Component */\n\n.logo {\n  float: left;\n  color: white;\n  font-size: 1.5rem;\n  font-weight: 700;\n  text-transform: uppercase;\n  /* line-height: 0.8rem */\n  position: relative;\n  text-align: center;\n}\n\n.logoDot {\n  color: red;\n}\n\n.logoSubTitle {\n  font-size: 0.5rem;\n  color: grey;\n  position: absolute;\n  left: 0;\n}\n\n.navigation:before,\n.navigation:after {\n  content: \"\";\n  display: table;\n  clear: both;\n}\n\n/* Language Component */\n\n.language {\n  color: grey;\n  font-size: 0.7rem;\n  float: right;\n}\n\n.langText {\n  display: inline-block;\n  margin: 0 1vw;\n  text-transform: uppercase;\n}\n\n.langText:hover {\n  cursor: pointer;\n  transform: scale(1.2);\n}\n\n.langActive {\n  color: white;\n}\n\n/* UserLogin Component */\n\n.nameSubTitle {\n  font-size: 0.5rem;\n  color: red;\n  margin: 0 1vw;\n  animation-name: showLoginUser;\n  animation-duration: 0.5s;\n  animation-iteration-count: 1;\n  animation-fill-mode: forwards;\n}\n\n.nameLogin {\n  color: white;\n}\n\n/* Header Component */\n\n.textHeader {\n  color: black;\n  text-align: center;\n  /* height: 10vh; */\n  font-size: 1.5rem;\n  display: flex;\n  align-items: left;\n  justify-content: left;\n  flex-direction: column;\n}\n\n.textHeader a {\n  text-transform: capitalize;\n  color: black;\n}\n\n.textHeader a:hover {\n  cursor: pointer;\n  padding: 0.1vw;\n}\n\n.header1,\n.header2,\n.header3,\n.header4,\n.header5,\n.header6 {\n  width: 100%;\n  margin-top: 1vh;\n  text-align: right;\n  color: red;\n}\n\n.header1 {\n  background: url(" + escape(__webpack_require__(33)) + ") center;\n  background-size: contain;\n  background-repeat: no-repeat;\n}\n\n.header2 {\n  background: url(" + escape(__webpack_require__(34)) + ") center;\n  background-size: contain;\n  background-repeat: no-repeat;\n}\n\n.header3 {\n  background: url(" + escape(__webpack_require__(35)) + ") center;\n  background-size: contain;\n  background-repeat: no-repeat;\n}\n\n.header4 {\n  background: url(" + escape(__webpack_require__(36)) + ") center;\n  background-size: contain;\n  background-repeat: no-repeat;\n}\n\n.header5 {\n  background: url(" + escape(__webpack_require__(37)) + ") center;\n  background-size: contain;\n  background-repeat: no-repeat;\n}\n\n/* ActuallyView Component */\n\n.actuallyView {\n  color: white;\n  animation-name: actuallyViewAnimation;\n  animation-duration: 1s;\n  animation-iteration-count: 1;\n  animation-fill-mode: forwards;\n  /* border: 1px solid red; */\n  width: 100%;\n  text-align: center;\n  text-align: center;\n}\n\n.actuallyViewHide {\n  animation-name: actuallyViewHideAnimation;\n  animation-duration: 1s;\n  animation-iteration-count: 1;\n  animation-fill-mode: forwards;\n  /* border: 1px solid red; */\n  width: 100%;\n  text-align: center;\n  color: white;\n  margin-top: 5vh;\n}\n\n/*HeaderLogin Component */\n\n.headerLogin {\n  width: 70%;\n  background: white;\n  border-radius: 10px;\n  color: black;\n  text-align: center;\n  margin: 0 auto;\n}\n\n.loginForm {\n  margin-top: 3vh;\n}\n\n.headerLogin label {\n  display: block;\n  margin-top: 2vh;\n  margin-bottom: 0.5vh;\n}\n\n.headerLogin input {\n  display: inline-block;\n  height: 4vh;\n  border: 1px solid grey;\n}\n\n.activeHeader {\n  color: red;\n  background: white;\n}\n\n.unActiveHeader {\n  color: black;\n  background: grey;\n}\n\n.loginSend {\n  display: inline-block;\n  padding: 2vw;\n  color: white;\n  background-color: red;\n  border: 2px solid red;\n  /* border-radius: 10px; */\n  text-align: center;\n  margin: 3vh auto;\n  text-transform: capitalize;\n}\n\n.loginSend:hover {\n  background: white;\n  cursor: pointer;\n  color: red;\n  border: 2px solid red;\n}\n\n.loginHeadSign,\n.loginHeadLogin {\n  width: 50%;\n  display: inline-block;\n  padding: 3vw;\n  text-transform: capitalize;\n}\n\n.loginHeadLogin {\n  border-radius: 10px 0 0 0;\n}\n\n.loginHeadSign {\n  border-radius: 0 10px 0 0;\n}\n\n.loginForm label {\n  text-transform: capitalize;\n}\n\n/*HeaderAbout component */\n\n.headerAbout {\n  width: 90%;\n  border-radius: 10px;\n  text-align: center;\n  margin: 0 auto;\n}\n\n.companyImg1,\n.companyImg2,\n.companyImg3 {\n  display: inline-block;\n  width: 30vw;\n  height: 15vw;\n  margin: 0 auto;\n  text-align: center;\n  margin-top: 2vw;\n  cursor: pointer;\n}\n\n.companyImg1:hover,\n.companyImg2:hover,\n.companyImg3:hover {\n  transform: scale(1.8);\n}\n\n.allCompanyImg {\n  margin-top: 3vh;\n  margin: 0 auto;\n  text-align: center;\n}\n\n.companyImg1 {\n  background: url(" + escape(__webpack_require__(38)) + ") center;\n  background-size: cover;\n  background-repeat: no-repeat;\n}\n\n.companyImg2 {\n  background: url(" + escape(__webpack_require__(39)) + ") center;\n  background-size: cover;\n  background-repeat: no-repeat;\n}\n\n.companyImg3 {\n  background: url(" + escape(__webpack_require__(40)) + ") center;\n  background-size: cover;\n  background-repeat: no-repeat;\n}\n\n/*HeaderTeams Component*/\n\n.headerTeams {\n  width: 90%;\n  border-radius: 10px;\n  text-align: center;\n  margin: 0 auto;\n}\n\n.teamsInfo {\n  font-weight: 700;\n  font-size: 1rem;\n}\n\n.teamsInfoHeader {\n  color: white;\n  display: block;\n  font-size: 1rem;\n  margin-top: 1vw;\n}\n\n.teamsLine {\n  display: block;\n  width: 20%;\n  text-align: center;\n  margin: 4vw auto;\n  border-bottom: 1px solid white;\n}\n\n.teams1,\n.teams2,\n.teams3 {\n  border: 1px solid white;\n  height: 20vh;\n  width: 30%;\n  display: inline-block;\n  font-size: 0.5rem;\n}\n\n.teamsImg {\n  height: 70%;\n  background: blue;\n  background-size: cover;\n}\n\n.teamsImg:hover {\n  transform: scale(1.2);\n}\n\n.teamsJoin {\n  display: block;\n  color: white;\n  font-size: 0.7rem;\n  margin-top: 5vw;\n}\n\n.teamsBtn {\n  padding: 2vw;\n  color: red;\n  background-color: black;\n  border: 2px solid red;\n  text-align: center;\n  margin: 2vh auto;\n  font-size: 0.6rem;\n}\n\n.teamsBtn:hover {\n  background: red;\n  color: white;\n  cursor: pointer;\n  border: 2px solid red;\n}\n\n/* HeaderWorks Component */\n\n.headerWorks {\n  width: 90%;\n  border-radius: 10px;\n  text-align: center;\n  margin: 0 auto;\n  color: white;\n}\n\n.worksInfoheader,\n.worksInfo {\n  display: inline;\n  font-size: 1rem;\n}\n\n.worksInfoheader {\n  text-align: left;\n  float: left;\n  text-transform: uppercase;\n}\n\n.worksInfo {\n  text-align: right;\n  float: right;\n  font-size: 0.7rem;\n}\n\n.worksInfo:hover {\n  cursor: pointer;\n  color: red;\n}\n\n.headerWorks:before,\n.headerWorks:after {\n  content: \"\";\n  display: table;\n  clear: both;\n}\n\n.worksAllImg {\n  width: 100%;\n  /* height: 40vh; */\n  margin-top: 10vw;\n  display: flex;\n  flex-wrap: wrap;\n  justify-content: space-around;\n  flex-direction: column;\n}\n\n.worksAllImg div {\n  color: white;\n  width: 100%;\n  height: 10vw;\n  border: 1px solid white;\n}\n\n.worksAllImg div:hover {\n  transform: scale(1.2);\n}\n\n/* Contact Component */\n\n.contactInfoHeader {\n  color: red;\n  font-size: 1.5rem;\n  font-weight: 700;\n  text-transform: uppercase;\n}\n\n.contactInfo {\n  margin: 3vw 0;\n  color: white;\n}\n\n.contactInfodetails {\n  margin-top: 1rem;\n  color: white;\n  font-size: 0.8rem;\n}\n\n.contactInfo img {\n  width: 2rem;\n  height: 2rem;\n  margin-right: 1rem;\n}\n\n/* ButtonHide Component */\n\n.btnShow {\n  width: 20%;\n  background: black;\n  color: white;\n  cursor: pointer;\n  border: 2px solid white;\n  border-radius: 10px;\n  padding: 2vw;\n  margin-top: 5vh;\n  text-transform: capitalize;\n}\n\n.btnShow:hover {\n  color: black;\n  background: white;\n  border: 2px solid white;\n}\n\n/* Footer Component */\n\n.footer {\n  position: absolute;\n  width: 100%;\n  padding: 3vw 0;\n  color: white;\n  bottom: 0;\n  margin-bottom: 1vw;\n  font-size: 0.5rem;\n  border-top: 1px solid grey;\n}\n\n.copyright {\n  float: left;\n}\n\n.copyright a {\n  color: white;\n  text-decoration: none;\n}\n\n.twitter,\n.facebook,\n.instagram,\n.youtube,\n.linkedin {\n  display: inline-block;\n  color: white;\n  float: right;\n  width: 25px;\n  height: 25px;\n  /* border: 1px solid white; */\n  margin-left: 0.5vw;\n  cursor: pointer;\n}\n\n.footer:before,\n.footer:after {\n  content: \"\";\n  display: table;\n  clear: both;\n}\n\n.twitter {\n  background: url(" + escape(__webpack_require__(41)) + ");\n  background-size: cover;\n  border-radius: 30%;\n}\n\n.twitter:hover {\n  background: url(" + escape(__webpack_require__(42)) + ");\n  background-size: cover;\n  border-radius: 30%;\n  /* transform: scale(1.3) */\n}\n\n.facebook {\n  background: url(" + escape(__webpack_require__(43)) + ");\n  background-size: contain;\n  border-radius: 30%;\n}\n\n.facebook:hover {\n  background: url(" + escape(__webpack_require__(44)) + ");\n  background-size: contain;\n  border-radius: 30%;\n  /* transform: scale(1.3) */\n}\n\n.instagram {\n  background: url(" + escape(__webpack_require__(45)) + ");\n  background-size: contain;\n  border-radius: 30%;\n}\n\n.instagram:hover {\n  background: url(" + escape(__webpack_require__(46)) + ");\n  background-size: contain;\n  border-radius: 30%;\n  /* transform: scale(1.3) */\n}\n\n.youtube {\n  background: url(" + escape(__webpack_require__(47)) + ") center;\n  background-size: contain;\n  background-repeat: no-repeat;\n  border-radius: 30%;\n}\n\n.youtube:hover {\n  background: url(" + escape(__webpack_require__(48)) + ") center;\n  background-size: contain;\n  background-repeat: no-repeat;\n  border-radius: 30%;\n  /* transform: scale(1.3) */\n}\n\n.linkedin {\n  background: url(" + escape(__webpack_require__(49)) + ") center;\n  background-size: contain;\n  background-repeat: no-repeat;\n  border-radius: 30%;\n}\n\n.linkedin:hover {\n  background: url(" + escape(__webpack_require__(50)) + ") center;\n  background-size: contain;\n  background-repeat: no-repeat;\n  border-radius: 30%;\n  /* transform: scale(1.3) */\n}\n\n/* -----------------------------------------*/\n\n/* ANIOMATION */\n\n.show {\n  animation-name: showAnimation;\n  animation-duration: 2s;\n  animation-iteration-count: 1;\n  animation-fill-mode: forwards;\n}\n\n.hide {\n  animation-name: hideAnimation;\n  animation-duration: 0.7s;\n  animation-iteration-count: 1;\n  animation-fill-mode: forwards;\n}\n\n.active {\n  animation-name: activeAnimation;\n  animation-duration: 1s;\n  animation-iteration-count: 1;\n  animation-fill-mode: forwards;\n}\n\n/* @KEYFRAMES */\n\n@keyframes showAnimation {\n  0% {\n    transform: translate(-70vw, 0vh);\n  }\n\n  100% {\n    transform: translate(5vw, 0vh);\n  }\n}\n\n@keyframes hideAnimation {\n  0% {\n    transform: translate(0vw, 0vh);\n  }\n\n  100% {\n    transform: translate(-80%, 0%);\n  }\n}\n\n@keyframes activeAnimation {\n  0% {\n    transform: translate(0vh, 0vh);\n  }\n\n  50% {\n    transform: translate(120%, 0vh);\n  }\n\n  100% {\n    position: absolute;\n    top: 20%;\n    left: 70%;\n  }\n}\n\n@keyframes actuallyViewAnimation {\n  0% {\n    transform: translate(0%, 100vh);\n  }\n\n  100% {\n    position: absolute;\n    top: 30%;\n    left: 0%;\n    /* transform: translate(0%, 0%); */\n  }\n}\n\n@keyframes actuallyViewHideAnimation {\n  0% {\n    position: absolute;\n    top: 30%;\n    left: 0%;\n  }\n\n  100% {\n    position: absolute;\n    bottom: 0%;\n    left: 0%;\n    transform: translate(0%, 100vh);\n    /* transform: translate(0%, 0%); */\n  }\n}\n\n@keyframes showLoginUser {\n  0% {\n    position: absolute;\n    right: -100%;\n    top: -180%;\n  }\n\n  50% {\n    right: -100%;\n  }\n\n  100% {\n    position: absolute;\n    right: 5%;\n    top: -150%;\n  }\n}\n\n/* MEDIA QUERY */\n\n@media (max-width: 415px) {\n  .all {\n    width: 100vw;\n  }\n\n  .navigation,\n  .footer {\n    width: 90%;\n  }\n\n  .logo {\n    font-size: 2rem;\n  }\n\n  .header1,\n  .header2,\n  .header3,\n  .header4,\n  .header5 {\n    margin-left: -70vw;\n  }\n\n  .textHeader {\n    font-size: 9vw;\n  }\n\n  .companyImg1,\n  .companyImg2,\n  .companyImg3 {\n    display: block;\n    width: 70%;\n    margin-top: 2vw;\n  }\n}\n\n@media (min-width: 415px) {\n  .all {\n    width: 70vw;\n  }\n\n  .navigation,\n  .footer {\n    width: 90%;\n  }\n\n  .logo {\n    font-size: 2rem;\n  }\n\n  .header1,\n  .header2,\n  .header3,\n  .header4,\n  .header5 {\n    margin-left: -50px;\n  }\n\n  .textHeader {\n    font-size: 6vw;\n    width: 100%;\n  }\n\n  .companyImg1,\n  .companyImg2,\n  .companyImg3 {\n    display: block;\n    width: 70%;\n    margin-top: 2vw;\n  }\n\n  .show {\n    margin: 1vw auto;\n  }\n\n@keyframes actuallyViewAnimation {\n    0% {\n      transform: translate(0%, 100vh);\n    }\n\n    100% {\n      position: absolute;\n      top: 25%;\n      left: 0%;\n      /* transform: translate(0%, 0%); */\n    }\n}\n\n@keyframes showAnimation {\n    0% {\n      transform: translate(-130%, 0vh);\n    }\n\n    100% {\n      transform: translate(0vw, 0vh);\n    }\n}\n\n@keyframes activeAnimation {\n    0% {\n      transform: translate(0vh, 0vh);\n    }\n\n    50% {\n      transform: translate(120%, 0vh);\n    }\n\n    100% {\n      position: absolute;\n      top: 15%;\n      left: 0%;\n    }\n}\n\n@keyframes hideAnimation {\n    0% {\n      transform: translate(0vw, 0vh);\n    }\n\n    50% {\n      transform: translate(-100%, 0%);\n    }\n\n    100% {\n      transform: translate(-150%, 0%);\n    }\n}\n}\n\n@media (min-width: 600px) {\n  .textHeader {\n    font-size: 5vw;\n  }\n\n  .show {\n    margin: 0.5vw auto;\n  }\n\n  .teamsLine {\n    margin: 1vw auto;\n  }\n\n  .worksAllImg {\n    display: flex;\n    flex-wrap: wrap;\n    justify-content: space-around;\n    flex-direction: row;\n    margin-top: 5vw;\n  }\n\n  .worksAllImg div {\n    width: 40%;\n  }\n\n  .contactInfo {\n    margin: 1vw 0;\n    color: white;\n  }\n\n  .contactInfodetails {\n    margin-top: 0.5rem;\n    color: white;\n    font-size: 0.8rem;\n  }\n\n  .contactInfo img {\n    width: 2rem;\n    height: 2rem;\n    margin-right: 0.5rem;\n  }\n\n  .contactInfoHeader {\n    margin-top: 3rem;\n  }\n}\n\n@media (min-width: 800px) {\n  .textHeader {\n    font-size: 4vw;\n  }\n\n  .show {\n    margin: 0.5vw auto;\n  }\n\n  .headerLogin {\n    width: 50%;\n    margin: 0 auto;\n  }\n\n  .allCompanyImg div {\n    width: 30%;\n    display: inline-block;\n    margin-left: 5px;\n  }\n\n  .teamsJoin {\n    margin-top: 2vw;\n  }\n\n  .footer {\n    position: absolute;\n    width: 100%;\n    padding: 1vw 0;\n    bottom: 0;\n    margin-bottom: 1vw;\n    font-size: 0.5rem;\n    border-top: 1px solid grey;\n  }\n}\n\n@media (min-width: 1000px) {\n  .textHeader {\n    font-size: 3vw;\n  }\n\n  .show {\n    margin: 0.5vw auto;\n  }\n\n  .headerLogin {\n    width: 30%;\n    margin: 0 auto;\n  }\n\n  /* .headerLogin{\r\n        width: 30%;\r\n        margin: 0 auto;\r\n    } */\n\n  .loginHeadSign,\n  .loginHeadLogin {\n    padding: 1vw;\n  }\n\n  .btnShow {\n    margin-top: 2vw;\n  }\n\n  .loginSend,\n  .teamsBtn {\n    margin: 1vw auto;\n    padding: 1vw;\n  }\n\n  .btnShow {\n    padding: 1vw;\n    width: 15%;\n  }\n\n  .worksAllImg {\n    display: flex;\n    flex-wrap: wrap;\n    justify-content: space-around;\n    flex-direction: row;\n    margin-top: 5vw;\n  }\n\n  .worksAllImg div {\n    width: 30%;\n  }\n}\n\n/* OLD COMPONENT */\n\n/* Jezyk Component */\n\n.pl,\n.eng,\n.de {\n  display: inline-block;\n  background: green;\n  margin-left: 1vw;\n  width: 20px;\n  height: 20px;\n  cursor: pointer;\n  /* background: red; */\n  float: right;\n}\n\n.pl {\n  background: url(" + escape(__webpack_require__(51)) + ") center;\n  background-size: contain;\n  background-repeat: no-repeat;\n}\n\n.eng {\n  background: url(" + escape(__webpack_require__(52)) + ") center;\n  background-size: contain;\n  background-repeat: no-repeat;\n}\n\n.de {\n  background: url(" + escape(__webpack_require__(53)) + ") center;\n  background-size: contain;\n  background-repeat: no-repeat;\n}\n\n.pl:hover,\n.eng:hover,\n.de:hover {\n  transform: scale(1.2);\n}\n\n/* Home Component */\n\n.home {\n  float: right;\n  background: url(" + escape(__webpack_require__(54)) + ");\n  background-size: cover;\n  width: 20px;\n  height: 20px;\n  margin-right: 10vw;\n}\n\n/*Login Component */\n\n.login {\n  float: right;\n  color: white;\n  font-size: 0.8rem;\n  font-weight: 700;\n  border: 2px solid white;\n  padding: 0.6rem 1.2rem;\n  border-radius: 10px;\n  text-transform: capitalize;\n}\n\n.login:hover {\n  background: white;\n}", ""]);
+exports.push([module.i, "* {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n}\n\nbody {\n  font-family: 'Open Sans', sans-serif;\n  height: 100vh;\n  width: 100vw;\n  background: black;\n}\n\n/* body:after{\r\n    content: \"\";\r\n    background: black;\r\n    opacity: 0.6;\r\n    top: 0;\r\n    left: 0;\r\n    bottom: 0;\r\n    right: 0;\r\n    position: absolute;\r\n    z-index: -1\r\n} */\n\n.all {\n  width: 90vw;\n  margin: 0 auto;\n}\n\n.container {\n  text-align: center;\n  margin: 0 auto;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  flex-direction: column;\n  overflow: hidden;\n  height: 100vh;\n  width: 100%;\n  position: relative;\n}\n\n/* Nav Component */\n\n.navigation {\n  width: 100%;\n  position: absolute;\n  top: 0;\n  margin-top: 5vh;\n  /* background:red; */\n  /* display: flex;\r\n    align-items: center;\r\n    justify-content: center;\r\n    flex-direction: row; */\n}\n\n/* Logo Component */\n\n.logo {\n  float: left;\n  color: white;\n  font-size: 1.5rem;\n  font-weight: 700;\n  text-transform: uppercase;\n  /* line-height: 0.8rem */\n  position: relative;\n  text-align: center;\n}\n\n.logoDot {\n  color: red;\n}\n\n.logoSubTitle {\n  font-size: 0.5rem;\n  color: grey;\n  position: absolute;\n  left: 0;\n}\n\n.navigation:before,\n.navigation:after {\n  content: \"\";\n  display: table;\n  clear: both;\n}\n\n/* Language Component */\n\n.language {\n  color: grey;\n  font-size: 0.7rem;\n  float: right;\n}\n\n.langText {\n  display: inline-block;\n  margin: 0 1vw;\n  text-transform: uppercase;\n}\n\n.langText:hover {\n  cursor: pointer;\n  transform: scale(1.2);\n}\n\n.langActive {\n  color: white;\n}\n\n/* UserLogin Component */\n\n.nameSubTitle {\n  font-size: 0.5rem;\n  color: red;\n  margin: 0 1vw;\n  animation-name: showLoginUser;\n  animation-duration: 0.5s;\n  animation-iteration-count: 1;\n  animation-fill-mode: forwards;\n}\n\n.nameLogin {\n  color: white;\n}\n\n/* Header Component */\n\n.textHeader {\n  color: black;\n  text-align: center;\n  /* height: 10vh; */\n  font-size: 1.5rem;\n  display: flex;\n  align-items: left;\n  justify-content: left;\n  flex-direction: column;\n}\n\n.textHeader a {\n  text-transform: capitalize;\n  color: black;\n}\n\n.textHeader a:hover {\n  cursor: pointer;\n  padding: 0.1vw;\n}\n\n.header1,\n.header2,\n.header3,\n.header4,\n.header5,\n.header6 {\n  width: 100%;\n  margin-top: 1vh;\n  text-align: right;\n  color: red;\n}\n\n.header1 {\n  background: url(" + escape(__webpack_require__(33)) + ") center;\n  background-size: contain;\n  background-repeat: no-repeat;\n}\n\n.header2 {\n  background: url(" + escape(__webpack_require__(34)) + ") center;\n  background-size: contain;\n  background-repeat: no-repeat;\n}\n\n.header3 {\n  background: url(" + escape(__webpack_require__(35)) + ") center;\n  background-size: contain;\n  background-repeat: no-repeat;\n}\n\n.header4 {\n  background: url(" + escape(__webpack_require__(36)) + ") center;\n  background-size: contain;\n  background-repeat: no-repeat;\n}\n\n.header5 {\n  background: url(" + escape(__webpack_require__(37)) + ") center;\n  background-size: contain;\n  background-repeat: no-repeat;\n}\n\n/* ActuallyView Component */\n\n.actuallyView {\n  color: white;\n  animation-name: actuallyViewAnimation;\n  animation-duration: 1s;\n  animation-iteration-count: 1;\n  animation-fill-mode: forwards;\n  /* border: 1px solid red; */\n  width: 100%;\n  text-align: center;\n  text-align: center;\n}\n\n.actuallyViewHide {\n  animation-name: actuallyViewHideAnimation;\n  animation-duration: 1s;\n  animation-iteration-count: 1;\n  animation-fill-mode: forwards;\n  /* border: 1px solid red; */\n  width: 100%;\n  text-align: center;\n  color: white;\n  margin-top: 5vh;\n}\n\n/*HeaderLogin Component */\n\n.headerLogin {\n  width: 70%;\n  background: white;\n  border-radius: 10px;\n  color: black;\n  text-align: center;\n  margin: 0 auto;\n}\n\n.loginForm {\n  margin-top: 3vh;\n}\n\n.headerLogin label {\n  display: block;\n  margin-top: 2vh;\n  margin-bottom: 0.5vh;\n}\n\n.headerLogin input {\n  display: inline-block;\n  height: 4vh;\n  border: 1px solid grey;\n}\n\n.activeHeader {\n  color: red;\n  background: white;\n}\n\n.unActiveHeader {\n  color: black;\n  background: grey;\n}\n\n.loginSend {\n  display: inline-block;\n  padding: 2vw;\n  color: white;\n  background-color: red;\n  border: 2px solid red;\n  /* border-radius: 10px; */\n  text-align: center;\n  margin: 3vh auto;\n  text-transform: capitalize;\n}\n\n.loginSend:hover {\n  background: white;\n  cursor: pointer;\n  color: red;\n  border: 2px solid red;\n}\n\n.loginHeadSign,\n.loginHeadLogin {\n  width: 50%;\n  display: inline-block;\n  padding: 3vw;\n  text-transform: capitalize;\n}\n\n.loginHeadLogin {\n  border-radius: 10px 0 0 0;\n}\n\n.loginHeadSign {\n  border-radius: 0 10px 0 0;\n}\n\n.loginForm label {\n  text-transform: capitalize;\n}\n\n/*HeaderAbout component */\n\n.headerAbout {\n  width: 90%;\n  border-radius: 10px;\n  text-align: center;\n  margin: 0 auto;\n}\n\n.companyImg1,\n.companyImg2,\n.companyImg3 {\n  display: inline-block;\n  width: 30vw;\n  height: 15vw;\n  margin: 0 auto;\n  text-align: center;\n  margin-top: 2vw;\n  cursor: pointer;\n}\n\n.companyImg1:hover,\n.companyImg2:hover,\n.companyImg3:hover {\n  transform: scale(1.8);\n}\n\n.allCompanyImg {\n  margin-top: 3vh;\n  margin: 0 auto;\n  text-align: center;\n}\n\n.companyImg1 {\n  background: url(" + escape(__webpack_require__(38)) + ") center;\n  background-size: cover;\n  background-repeat: no-repeat;\n}\n\n.companyImg2 {\n  background: url(" + escape(__webpack_require__(39)) + ") center;\n  background-size: cover;\n  background-repeat: no-repeat;\n}\n\n.companyImg3 {\n  background: url(" + escape(__webpack_require__(40)) + ") center;\n  background-size: cover;\n  background-repeat: no-repeat;\n}\n\n/*HeaderTeams Component*/\n\n.headerTeams {\n  width: 90%;\n  border-radius: 10px;\n  text-align: center;\n  margin: 0 auto;\n}\n\n.teamsInfo {\n  font-weight: 700;\n  font-size: 1rem;\n}\n\n.teamsInfoHeader {\n  color: white;\n  display: block;\n  font-size: 1rem;\n  margin-top: 1vw;\n}\n\n.teamsLine {\n  display: block;\n  width: 20%;\n  text-align: center;\n  margin: 4vw auto;\n  border-bottom: 1px solid white;\n}\n\n.teams1,\n.teams2,\n.teams3 {\n  border: 1px solid white;\n  height: 20vh;\n  width: 30%;\n  display: inline-block;\n  font-size: 0.5rem;\n}\n\n.teamsImg {\n  height: 70%;\n  background: blue;\n  background-size: cover;\n}\n\n.teamsImg:hover {\n  transform: scale(1.2);\n}\n\n.teamsJoin {\n  display: block;\n  color: white;\n  font-size: 0.7rem;\n  margin-top: 5vw;\n}\n\n.teamsBtn {\n  padding: 2vw;\n  color: red;\n  background-color: black;\n  border: 2px solid red;\n  text-align: center;\n  margin: 2vh auto;\n  font-size: 0.6rem;\n}\n\n.teamsBtn:hover {\n  background: red;\n  color: white;\n  cursor: pointer;\n  border: 2px solid red;\n}\n\n/* HeaderWorks Component */\n\n.headerWorks {\n  width: 90%;\n  border-radius: 10px;\n  text-align: center;\n  margin: 0 auto;\n  color: white;\n}\n\n.worksInfoheader,\n.worksInfo {\n  display: inline;\n  font-size: 1rem;\n}\n\n.worksInfoheader {\n  text-align: left;\n  float: left;\n  text-transform: uppercase;\n}\n\n.worksInfo {\n  text-align: right;\n  float: right;\n  font-size: 0.7rem;\n}\n\n.worksInfo:hover {\n  cursor: pointer;\n  color: red;\n}\n\n.headerWorks:before,\n.headerWorks:after {\n  content: \"\";\n  display: table;\n  clear: both;\n}\n\n.worksAllImg {\n  width: 100%;\n  /* height: 40vh; */\n  margin-top: 10vw;\n  display: flex;\n  flex-wrap: wrap;\n  justify-content: space-around;\n  flex-direction: column;\n}\n\n.worksAllImg div {\n  color: white;\n  width: 100%;\n  height: 10vw;\n  border: 1px solid white;\n}\n\n.worksAllImg div:hover {\n  transform: scale(1.2);\n}\n\n/* Contact Component */\n\n.contactInfoHeader {\n  color: red;\n  font-size: 1.5rem;\n  font-weight: 700;\n  text-transform: uppercase;\n}\n\n.contactInfo {\n  margin: 3vw 0;\n  color: white;\n}\n\n.contactInfodetails {\n  margin-top: 1rem;\n  color: white;\n  font-size: 0.8rem;\n}\n\n.contactInfo img {\n  width: 2rem;\n  height: 2rem;\n  margin-right: 1rem;\n}\n\n/* ButtonHide Component */\n\n.btnShow {\n  width: 20%;\n  background: black;\n  color: white;\n  cursor: pointer;\n  border: 2px solid white;\n  border-radius: 10px;\n  padding: 2vw;\n  margin-top: 5vh;\n  text-transform: capitalize;\n}\n\n.btnShow:hover {\n  color: black;\n  background: white;\n  border: 2px solid white;\n}\n\n/* Footer Component */\n\n.footer {\n  position: absolute;\n  width: 100%;\n  padding: 3vw 0;\n  color: white;\n  bottom: 0;\n  margin-bottom: 1vw;\n  font-size: 0.5rem;\n  border-top: 1px solid grey;\n}\n\n.copyright {\n  float: left;\n}\n\n.copyright a {\n  color: white;\n  text-decoration: none;\n}\n\n.twitter,\n.facebook,\n.instagram,\n.youtube,\n.linkedin {\n  display: inline-block;\n  color: white;\n  float: right;\n  width: 25px;\n  height: 25px;\n  /* border: 1px solid white; */\n  margin-left: 0.5vw;\n  cursor: pointer;\n}\n\n.footer:before,\n.footer:after {\n  content: \"\";\n  display: table;\n  clear: both;\n}\n\n.twitter {\n  background: url(" + escape(__webpack_require__(41)) + ");\n  background-size: cover;\n  border-radius: 30%;\n}\n\n.twitter:hover {\n  background: url(" + escape(__webpack_require__(42)) + ");\n  background-size: cover;\n  border-radius: 30%;\n  /* transform: scale(1.3) */\n}\n\n.facebook {\n  background: url(" + escape(__webpack_require__(43)) + ");\n  background-size: contain;\n  border-radius: 30%;\n}\n\n.facebook:hover {\n  background: url(" + escape(__webpack_require__(44)) + ");\n  background-size: contain;\n  border-radius: 30%;\n  /* transform: scale(1.3) */\n}\n\n.instagram {\n  background: url(" + escape(__webpack_require__(45)) + ");\n  background-size: contain;\n  border-radius: 30%;\n}\n\n.instagram:hover {\n  background: url(" + escape(__webpack_require__(46)) + ");\n  background-size: contain;\n  border-radius: 30%;\n  /* transform: scale(1.3) */\n}\n\n.youtube {\n  background: url(" + escape(__webpack_require__(47)) + ") center;\n  background-size: contain;\n  background-repeat: no-repeat;\n  border-radius: 30%;\n}\n\n.youtube:hover {\n  background: url(" + escape(__webpack_require__(48)) + ") center;\n  background-size: contain;\n  background-repeat: no-repeat;\n  border-radius: 30%;\n  /* transform: scale(1.3) */\n}\n\n.linkedin {\n  background: url(" + escape(__webpack_require__(49)) + ") center;\n  background-size: contain;\n  background-repeat: no-repeat;\n  border-radius: 30%;\n}\n\n.linkedin:hover {\n  background: url(" + escape(__webpack_require__(50)) + ") center;\n  background-size: contain;\n  background-repeat: no-repeat;\n  border-radius: 30%;\n  /* transform: scale(1.3) */\n}\n\n/* -----------------------------------------*/\n\n/* ANIOMATION */\n\n.show {\n  animation-name: showAnimation;\n  animation-duration: 2s;\n  animation-iteration-count: 1;\n  animation-fill-mode: forwards;\n}\n\n.hide {\n  animation-name: hideAnimation;\n  animation-duration: 0.7s;\n  animation-iteration-count: 1;\n  animation-fill-mode: forwards;\n}\n\n.active {\n  animation-name: activeAnimation;\n  animation-duration: 1s;\n  animation-iteration-count: 1;\n  animation-fill-mode: forwards;\n}\n\n/* @KEYFRAMES */\n\n@keyframes showAnimation {\n  0% {\n    transform: translate(-70vw, 0vh);\n  }\n\n  100% {\n    transform: translate(5vw, 0vh);\n  }\n}\n\n@keyframes hideAnimation {\n  0% {\n    transform: translate(0vw, 0vh);\n  }\n\n  100% {\n    transform: translate(-80%, 0%);\n  }\n}\n\n@keyframes activeAnimation {\n  0% {\n    transform: translate(0vh, 0vh);\n  }\n\n  50% {\n    transform: translate(120%, 0vh);\n  }\n\n  100% {\n    position: absolute;\n    top: 20%;\n    left: 70%;\n  }\n}\n\n@keyframes actuallyViewAnimation {\n  0% {\n    transform: translate(0%, 100vh);\n  }\n\n  100% {\n    position: absolute;\n    top: 30%;\n    left: 0%;\n    /* transform: translate(0%, 0%); */\n  }\n}\n\n@keyframes actuallyViewHideAnimation {\n  0% {\n    position: absolute;\n    top: 30%;\n    left: 0%;\n  }\n\n  100% {\n    position: absolute;\n    bottom: 0%;\n    left: 0%;\n    transform: translate(0%, 100vh);\n    /* transform: translate(0%, 0%); */\n  }\n}\n\n@keyframes showLoginUser {\n  0% {\n    position: absolute;\n    right: -100%;\n    top: -180%;\n  }\n\n  50% {\n    right: -100%;\n  }\n\n  100% {\n    position: absolute;\n    right: 5%;\n    top: -150%;\n  }\n}\n\n/* MEDIA QUERY */\n\n@media (max-width: 415px) {\n  .all {\n    width: 100vw;\n  }\n\n  .navigation,\n  .footer {\n    width: 90%;\n  }\n\n  .logo {\n    font-size: 2rem;\n  }\n\n  .header1,\n  .header2,\n  .header3,\n  .header4,\n  .header5 {\n    margin-left: -70vw;\n  }\n\n  .textHeader {\n    font-size: 9vw;\n  }\n\n  .companyImg1,\n  .companyImg2,\n  .companyImg3 {\n    display: block;\n    width: 70%;\n    margin-top: 2vw;\n  }\n}\n\n@media (min-width: 415px) {\n  .all {\n    width: 70vw;\n  }\n\n  .navigation,\n  .footer {\n    width: 90%;\n  }\n\n  .logo {\n    font-size: 2rem;\n  }\n\n  .header1,\n  .header2,\n  .header3,\n  .header4,\n  .header5 {\n    margin-left: -50px;\n  }\n\n  .textHeader {\n    font-size: 6vw;\n    width: 100%;\n  }\n\n  .companyImg1,\n  .companyImg2,\n  .companyImg3 {\n    display: block;\n    width: 70%;\n    margin-top: 2vw;\n  }\n\n  .show {\n    margin: 1vw auto;\n  }\n\n@keyframes actuallyViewAnimation {\n    0% {\n      transform: translate(0%, 100vh);\n    }\n\n    100% {\n      position: absolute;\n      top: 25%;\n      left: 0%;\n      /* transform: translate(0%, 0%); */\n    }\n}\n\n@keyframes showAnimation {\n    0% {\n      transform: translate(-130%, 0vh);\n    }\n\n    100% {\n      transform: translate(0vw, 0vh);\n    }\n}\n\n@keyframes activeAnimation {\n    0% {\n      transform: translate(0vh, 0vh);\n    }\n\n    50% {\n      transform: translate(120%, 0vh);\n    }\n\n    100% {\n      position: absolute;\n      top: 15%;\n      left: 0%;\n    }\n}\n\n@keyframes hideAnimation {\n    0% {\n      transform: translate(0vw, 0vh);\n    }\n\n    50% {\n      transform: translate(-100%, 0%);\n    }\n\n    100% {\n      transform: translate(-150%, 0%);\n    }\n}\n}\n\n@media (min-width: 600px) {\n  .textHeader {\n    font-size: 5vw;\n  }\n\n  .show {\n    margin: 0.5vw auto;\n  }\n\n  .teamsLine {\n    margin: 1vw auto;\n  }\n\n  .worksAllImg {\n    display: flex;\n    flex-wrap: wrap;\n    justify-content: space-around;\n    flex-direction: row;\n    margin-top: 5vw;\n  }\n\n  .worksAllImg div {\n    width: 40%;\n  }\n\n  .contactInfo {\n    margin: 1vw 0;\n    color: white;\n  }\n\n  .contactInfodetails {\n    margin-top: 0.5rem;\n    color: white;\n    font-size: 0.8rem;\n  }\n\n  .contactInfo img {\n    width: 2rem;\n    height: 2rem;\n    margin-right: 0.5rem;\n  }\n\n  .contactInfoHeader {\n    margin-top: 3rem;\n  }\n}\n\n@media (min-width: 800px) {\n  .textHeader {\n    font-size: 4vw;\n  }\n\n  .show {\n    margin: 0.5vw auto;\n  }\n\n  .headerLogin {\n    width: 50%;\n    margin: 0 auto;\n  }\n\n  .allCompanyImg div {\n    width: 30%;\n    display: inline-block;\n    margin-left: 5px;\n  }\n\n  .teamsJoin {\n    margin-top: 2vw;\n  }\n\n  .footer {\n    position: absolute;\n    width: 100%;\n    padding: 1vw 0;\n    bottom: 0;\n    margin-bottom: 1vw;\n    font-size: 0.5rem;\n    border-top: 1px solid grey;\n  }\n}\n\n@media (min-width: 1000px) {\n  .textHeader {\n    font-size: 3vw;\n  }\n\n  .show {\n    margin: 0.5vw auto;\n  }\n\n  .headerLogin {\n    width: 30%;\n    margin: 0 auto;\n  }\n\n  /* .headerLogin{\r\n        width: 30%;\r\n        margin: 0 auto;\r\n    } */\n\n  .loginHeadSign,\n  .loginHeadLogin {\n    padding: 1vw;\n  }\n\n  .btnShow {\n    margin-top: 2vw;\n  }\n\n  .loginSend,\n  .teamsBtn {\n    margin: 1vw auto;\n    padding: 1vw;\n  }\n\n  .btnShow {\n    padding: 1vw;\n    width: 15%;\n  }\n\n  .worksAllImg {\n    display: flex;\n    flex-wrap: wrap;\n    justify-content: space-around;\n    flex-direction: row;\n    margin-top: 5vw;\n  }\n\n  .worksAllImg div {\n    width: 30%;\n  }\n}", ""]);
 
 // exports
 
@@ -21248,30 +21248,6 @@ module.exports = __webpack_require__.p + "1f8997c30068db892067712a4ae39f8a.png";
 /* 51 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "bb217898f7d9c90b53a49dda672abc36.png";
-
-/***/ }),
-/* 52 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "2146eec601cc44059693a4503f933d08.png";
-
-/***/ }),
-/* 53 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "46c1f03188db36803851aa2ddd1732c9.png";
-
-/***/ }),
-/* 54 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "13ba7c94a214be4b1eea0744929d07db.png";
-
-/***/ }),
-/* 55 */
-/***/ (function(module, exports, __webpack_require__) {
-
 /*
 	MIT License http://www.opensource.org/licenses/mit-license.php
 	Author Tobias Koppers @sokra
@@ -21335,7 +21311,7 @@ var singleton = null;
 var	singletonCounter = 0;
 var	stylesInsertedAtTop = [];
 
-var	fixUrls = __webpack_require__(56);
+var	fixUrls = __webpack_require__(52);
 
 module.exports = function(list, options) {
 	if (typeof DEBUG !== "undefined" && DEBUG) {
@@ -21655,7 +21631,7 @@ function updateLink (link, options, obj) {
 
 
 /***/ }),
-/* 56 */
+/* 52 */
 /***/ (function(module, exports) {
 
 
@@ -21750,7 +21726,7 @@ module.exports = function (css) {
 
 
 /***/ }),
-/* 57 */
+/* 53 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21766,23 +21742,23 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _Body = __webpack_require__(58);
+var _Body = __webpack_require__(54);
 
 var _Body2 = _interopRequireDefault(_Body);
 
-var _Nav = __webpack_require__(59);
+var _Nav = __webpack_require__(55);
 
 var _Nav2 = _interopRequireDefault(_Nav);
 
-var _Header = __webpack_require__(62);
+var _Header = __webpack_require__(58);
 
 var _Header2 = _interopRequireDefault(_Header);
 
-var _Footer = __webpack_require__(63);
+var _Footer = __webpack_require__(59);
 
 var _Footer2 = _interopRequireDefault(_Footer);
 
-var _ActuallyView = __webpack_require__(64);
+var _ActuallyView = __webpack_require__(60);
 
 var _ActuallyView2 = _interopRequireDefault(_ActuallyView);
 
@@ -21816,24 +21792,27 @@ var Design = function (_Component) {
         };
 
         _this.showOrHideElements = function (e) {
-            var currentClass = e.currentTarget.className;
-            var final = currentClass.substring(0, 7); //need to numer with class
+            var final = e.currentTarget.classList.value;
+            var imie = e.currentTarget.dataset.test;
+            // console.log('imie:', imie)
+            // console.log('dlugosc:',imie.length)
 
-            if (e.currentTarget.className == final + ' show active') {
+            if (final.search('show') < 0) {
                 // console.log('double click')
             } else if (_this.state.actuallyView) {
                 //blokuje onClick na headerze przed pojawieniem
             } else {
                 var allHeader = document.querySelectorAll('#header');
                 allHeader.forEach(function (el) {
-                    return el.classList.add('hide');
+                    el.classList.remove('show');
+                    el.classList.add('hide');
                 });
 
                 e.currentTarget.classList.remove('hide');
                 e.currentTarget.classList.add('active');
 
                 _this.setState({
-                    nameView: e.currentTarget.innerText.toLowerCase()
+                    nameView: imie
                     // actuallyView: !this.state.actuallyView,
                 });
                 //show inside headers
@@ -21843,6 +21822,32 @@ var Design = function (_Component) {
                     });
                 }, 300);
             }
+
+            // elem.currentTarget.innerText = 'wcisnięty'
+            // let currentClass = e.currentTarget.className;
+            // let final = currentClass.substring(0,7); //need to numer with class
+            // if(e.currentTarget.className == `${final} show active`){
+            //     // console.log('double click')
+            // } else if (this.state.actuallyView){
+            //     //blokuje onClick na headerze przed pojawieniem
+            // } else {
+            //     let allHeader = document.querySelectorAll('#header');
+            //     allHeader.forEach(el => el.classList.add('hide'))
+
+            //     e.currentTarget.classList.remove('hide');    
+            //     e.currentTarget.classList.add('active');
+            //     this.setState({
+            //         nameView: el.toLowerCase(),
+            //         // actuallyView: !this.state.actuallyView,
+            //     })
+            //     //show inside headers
+            //     setTimeout(() => {
+            //     this.setState({
+            //         actuallyView: !this.state.actuallyView,
+            //         })
+            //     },300)
+
+            // }  
         };
 
         _this.setLanguage = function (info) {
@@ -21898,7 +21903,7 @@ var Design = function (_Component) {
                 null,
                 _react2.default.createElement(_Nav2.default, { fnClick: this.setLanguage, language: language }),
                 menu.map(function (el, key) {
-                    return _react2.default.createElement(_Header2.default, { language: language, id: key + 1, key: el, fnClick: _this2.showOrHideElements });
+                    return _react2.default.createElement(_Header2.default, { language: language, id: key + 1, key: el, imie: el, fnClick: _this2.showOrHideElements });
                 }),
                 actuallyView ? _react2.default.createElement(_ActuallyView2.default, { language: language, fnClick: this.hideActuallyView, nameHeader: nameView }) : null,
                 _react2.default.createElement(_Footer2.default, null)
@@ -21912,7 +21917,7 @@ var Design = function (_Component) {
 exports.default = Design;
 
 /***/ }),
-/* 58 */
+/* 54 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21966,7 +21971,7 @@ var Body = function (_Component) {
 exports.default = Body;
 
 /***/ }),
-/* 59 */
+/* 55 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21982,11 +21987,11 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _Logo = __webpack_require__(60);
+var _Logo = __webpack_require__(56);
 
 var _Logo2 = _interopRequireDefault(_Logo);
 
-var _Language = __webpack_require__(61);
+var _Language = __webpack_require__(57);
 
 var _Language2 = _interopRequireDefault(_Language);
 
@@ -22029,7 +22034,7 @@ var Nav = function (_Component) {
 exports.default = Nav;
 
 /***/ }),
-/* 60 */
+/* 56 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -22090,7 +22095,7 @@ var Logo = function (_Component) {
 exports.default = Logo;
 
 /***/ }),
-/* 61 */
+/* 57 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -22174,7 +22179,7 @@ var Language = function (_Component) {
 exports.default = Language;
 
 /***/ }),
-/* 62 */
+/* 58 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -22228,7 +22233,7 @@ var Header = function (_Component) {
         value: function render() {
             return _react2.default.createElement(
                 'div',
-                { id: 'header', className: 'header' + this.props.id, onClick: this.showOrHideElement },
+                { id: 'header', className: 'header' + this.props.id + ' ' + this.props.imie, 'data-test': this.props.imie, onClick: this.props.fnClick },
                 _react2.default.createElement(
                     'div',
                     { className: 'textHeader' },
@@ -22248,7 +22253,7 @@ var Header = function (_Component) {
 exports.default = Header;
 
 /***/ }),
-/* 63 */
+/* 59 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -22329,7 +22334,7 @@ var Footer = function (_Component) {
 exports.default = Footer;
 
 /***/ }),
-/* 64 */
+/* 60 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -22345,27 +22350,27 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _HeaderAbout = __webpack_require__(65);
+var _HeaderAbout = __webpack_require__(61);
 
 var _HeaderAbout2 = _interopRequireDefault(_HeaderAbout);
 
-var _ButtonHide = __webpack_require__(66);
+var _ButtonHide = __webpack_require__(62);
 
 var _ButtonHide2 = _interopRequireDefault(_ButtonHide);
 
-var _HeaderContact = __webpack_require__(67);
+var _HeaderContact = __webpack_require__(63);
 
 var _HeaderContact2 = _interopRequireDefault(_HeaderContact);
 
-var _HeaderLogin = __webpack_require__(68);
+var _HeaderLogin = __webpack_require__(64);
 
 var _HeaderLogin2 = _interopRequireDefault(_HeaderLogin);
 
-var _HeaderTeams = __webpack_require__(69);
+var _HeaderTeams = __webpack_require__(65);
 
 var _HeaderTeams2 = _interopRequireDefault(_HeaderTeams);
 
-var _HeaderWorks = __webpack_require__(70);
+var _HeaderWorks = __webpack_require__(66);
 
 var _HeaderWorks2 = _interopRequireDefault(_HeaderWorks);
 
@@ -22439,7 +22444,7 @@ var ActuallyView = function (_Component) {
             // let b = nameHeader.substring(0,a);
             // console.log(b)
             // console.log(b.length)
-
+            console.log(nameHeader == 'about');
             return _react2.default.createElement(
                 'div',
                 { id: 'view', className: 'actuallyView' },
@@ -22463,7 +22468,7 @@ var ActuallyView = function (_Component) {
 exports.default = ActuallyView;
 
 /***/ }),
-/* 65 */
+/* 61 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -22521,7 +22526,7 @@ var HeaderAbout = function (_Component) {
 exports.default = HeaderAbout;
 
 /***/ }),
-/* 66 */
+/* 62 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -22590,7 +22595,7 @@ var ButtonHide = function (_Component) {
 exports.default = ButtonHide;
 
 /***/ }),
-/* 67 */
+/* 63 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -22683,7 +22688,7 @@ var HeaderContact = function (_Component) {
 exports.default = HeaderContact;
 
 /***/ }),
-/* 68 */
+/* 64 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -22854,7 +22859,7 @@ var HeaderLogin = function (_Component) {
 exports.default = HeaderLogin;
 
 /***/ }),
-/* 69 */
+/* 65 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -22957,7 +22962,7 @@ var HeaderTeams = function (_Component) {
 exports.default = HeaderTeams;
 
 /***/ }),
-/* 70 */
+/* 66 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
