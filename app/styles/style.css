@@ -1,0 +1,889 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    height: 100vh;
+    width: 100vw;
+    background: black;
+
+}
+
+/* body:after{
+    content: "";
+    background: black;
+    opacity: 0.6;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1
+} */
+.all{
+    width: 90%;
+    margin: 0 auto;
+    
+}
+.container{
+    text-align:center;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+
+
+/* Nav Component */
+.navigation{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    margin-top: 5vh;
+}
+
+
+
+/* Logo Component */
+.logo{
+    float: left;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    /* line-height: 0.8rem */
+    position: relative;
+    text-align: center
+}
+
+.logoDot{
+    color: red
+}
+.logoSubTitle{
+    font-size: 0.5rem;
+    color: grey;
+    position: absolute;
+    left: 0;
+}
+.navigation:before, .navigation:after { 
+    content: ""; 
+    display: table; 
+    clear: both; 
+}
+
+
+
+/* Language Component */
+.language{
+    color: grey;
+    font-size: 0.7rem;
+    float: right;
+}
+.langText{
+    display: inline-block;
+    margin: 0 1vw;
+    text-transform: uppercase;
+}
+.langText:hover{
+    cursor: pointer;
+    transform: scale(1.2)
+}
+.langActive{
+    color: white
+}
+
+
+
+/* UserLogin Component */
+.nameSubTitle{
+    font-size: 0.8rem;
+    color: red;
+    margin: 0 1vw;
+    animation-name: showLoginUser;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+.nameLogin{
+    color: white
+}
+
+
+
+/* Header Component */
+.textHeader{
+    color: black;
+    text-align: center;
+    /* height: 10vh; */
+    font-size: 3.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.textHeader a{
+    text-transform: capitalize;
+    color: black;
+}
+.textHeader a:hover {
+    cursor: pointer;
+    padding: 0.1vw
+}
+.header1, .header2, .header3, .header4, .header5, .header6{
+    width: 100%;
+    margin-top: 1vh;
+    text-align: right;
+    color: red;
+}
+.header1{
+    background: url(../image/header1.jpg) center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.header2{
+    background: url(../image/header2.jpg) center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.header3{
+    background: url(../image/header3.jpg) center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.header4{
+    background: url(../image/header4.jpg) center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.header5{
+    background: url(../image/header5.jpg) center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+
+/* ActuallyView Component */
+.actuallyView{
+    color: white;
+    animation-name: actuallyViewAnimation;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    width: 100%;
+    height: 65%;
+    text-align: center;
+}
+.actuallyViewHide{
+    animation-name: actuallyViewHideAnimation;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    width: 100%;
+    text-align: center;
+    color: white;
+    margin-top: 5vh
+}
+
+
+
+/*HeaderLogin Component */
+.headerLogin{
+    width: 70%;
+    background: white;
+    border-radius: 10px;
+    color: black;
+    text-align: center;
+    margin: 0 auto;
+}
+.loginForm{
+    margin-top: 3vh;
+}
+.headerLogin label {
+    display: block;
+    margin-top: 2vh;
+    margin-bottom: 0.5vh;
+}
+.headerLogin input {
+    display: inline-block;
+    height: 4vh;
+    border: 1px solid grey
+}
+.activeHeader{
+    color: red;
+    background: white;
+}
+.unActiveHeader{
+    color: black;
+    background: grey
+}
+.loginSend{
+    display: inline-block;
+    padding: 2vw;
+    color: white;
+    background-color: red;
+    border: 2px solid red;
+    text-align: center;
+    margin: 3vh auto;
+    text-transform: capitalize
+}
+.loginSend:hover{
+    background:white;
+    cursor: pointer;
+    color: red;
+    border: 2px solid red
+}
+.loginHeadSign, .loginHeadLogin{
+    width: 50%;
+    display: inline-block;
+    padding: 3vw;
+    text-transform: capitalize
+}
+.loginHeadLogin{
+    border-radius: 10px 0 0 0
+}
+.loginHeadSign{
+    border-radius: 0 10px 0 0; 
+}
+.loginForm label{
+    text-transform: capitalize
+}
+
+
+
+/*HeaderAbout component */
+.headerAbout{
+    width: 90%;
+    border-radius: 10px;
+    text-align: center;
+    margin: 0 auto;
+}
+.companyImg1, .companyImg2, .companyImg3{
+    display: inline-block;
+    width: 30vw;
+    height: 15vw;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 2vw;
+    cursor: pointer;
+    margin-left: 1vw;
+}
+.companyImg1:hover, .companyImg2:hover, .companyImg3:hover{
+    transform: scale(1.5)
+}
+.allCompanyImg{
+    margin-top: 3vh;
+    margin: 0 auto;
+    text-align: center
+}
+.companyImg1{
+    background: url(../image/company1.jpg) center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.companyImg2{
+    background: url(../image/company2.jpg) center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.companyImg3{
+    background: url(../image/company3.jpg) center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+
+/*HeaderTeams Component*/
+.headerTeams{
+    width: 70%;
+    border-radius: 10px;
+    text-align: center;
+    margin: 0 auto;
+}
+.teamsInfo{
+    font-weight: 700;
+    font-size: 1rem
+}
+.teamsInfoHeader{
+    color: white;
+    display: block;
+    font-size: 1rem;
+    margin-top: 1vw
+}
+.teamsLine{
+    display: block;
+    width: 20%;
+    text-align: center;
+    margin: 1vw auto;
+    border-bottom: 1px solid white;
+}
+.teams1, .teams2, .teams3{
+    border: 1px solid white;
+    height: 20vh;
+    width: 30%;
+    display: inline-block;
+    font-size: 0.6rem;
+    margin: 1vw
+}
+.teamsImg{
+    height: 65%;
+    background: white;
+    background-size: cover;
+}
+.teamsImg:hover{
+    transform: scale(1.2)
+}
+.teamsJoin{
+    display: block;
+    color: white;
+    font-size: 0.7rem;
+    margin-top: 5vw
+}
+.teamsBtn{
+    padding: 2vw;
+    color: red;
+    background-color: black;
+    border: 2px solid red;
+    text-align: center;
+    margin: 2vh auto;
+}
+.teamsBtn:hover{
+    background: red;
+    color: white;
+    cursor: pointer;
+    border: 2px solid red
+}
+.teamPosition{
+    font-size: 0.5rem;
+    color: green;
+    font-weight: bold
+}
+
+
+
+/* HeaderWorks Component */
+.headerWorks{
+    width: 90%;
+    border-radius: 10px;
+    text-align: center;
+    margin: 0 auto;
+    color: white;
+}
+.worksAll{
+    color: red;
+    font-size: 1.1rem;
+}
+.worksInfoheader, .worksInfo{
+    display: inline;
+    font-size: 1rem
+}
+.worksInfoheader{
+    text-align: left;
+    float: left;
+    text-transform: uppercase
+}
+.worksInfo{
+    text-align: right;
+    float: right;
+    font-size: 0.8rem;
+}
+.worksInfo a{
+    text-decoration: none;
+    color: white;
+}
+.worksInfo a:hover{
+    cursor: pointer;
+    color: red
+}
+.headerWorks:before, .headerWorks:after { 
+    content: ""; 
+    display: table; 
+    clear: both; 
+}
+.worksAllImg{
+    width: 100%;
+    margin-top: 5vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-direction: column;
+    align-content: space-around;
+}
+.worksAllImg div{
+    color: white;
+    width: 40%;
+    height: 20vw;
+    margin-top: 2vw;
+    border: 1px solid white;
+}
+.worksAllImg div:hover{
+    transform: scale(1.2)
+}
+.worksAllImg img{
+    width: 30%;
+    height: 50%;
+}
+.worksAllImg a{
+    text-decoration: none;
+    color: white;
+    cursor: pointer
+}
+.worksAllImg a:hover{
+    color: red
+}
+
+
+
+/* HeaderContact Component */
+.headerContact{
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
+}
+.allContactElem{
+    width: 100%
+}
+.contactInfo{
+    margin-top: 1rem;
+    color: white
+}
+.contactInfo img {
+    width: 1rem;
+    height: 1rem;
+    margin-right: 1rem;
+}
+.footer_formularz {
+    width: 100%;
+    text-align: left
+}
+.contactInfoHeader{
+    color: green;
+    font-weight: 700;
+    margin: 2rem 0 0.5rem 0 ;
+    font-size: 0.9rem
+}
+
+.footer_formularz label {
+    display: inline-block;
+    width: 100%;
+    color: white;
+    font-size: 0.8rem;
+    margin-top: 0.5rem
+}
+.footer_formularz input {
+    border: 2px solid grey;
+    background: black;
+    width: 100%;
+    height: 2rem;
+    color: white
+}
+
+.footer_formularz textarea {
+    border: 2px solid grey;
+    background: black;
+    width: 80%;
+    color: white;
+    resize: none;
+    height: 4rem;
+}
+.contactBtn{
+    display: inline-block;
+    padding: 2vw;
+    color: red;
+    background-color: black;
+    border: 2px solid red;
+    text-align: center;
+    float: right;
+    height: 4rem;
+}
+.contactBtn:hover{
+    background: red;
+    color: white;
+    cursor: pointer;
+    border: 2px solid red
+}
+
+
+
+/* ButtonHide Component */
+.btnShow{
+    width: 10%;
+    background: black;
+    color: white;
+    cursor: pointer;
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 1vw;
+    text-transform: capitalize;
+    /* position: absolute;
+    left: 50%; 
+    bottom:0;
+    transform: translate(-50%, -50%); */
+    margin-top: 2vw
+
+}
+.btnShow:hover{
+    color: black;
+    background: white;
+    border: 2px solid white
+}
+
+
+
+/* Footer Component */
+.footer{
+    position: absolute;
+    width: 100%;
+    padding: 1rem 0; 
+    color: white;
+    bottom: 0;
+    font-size: 0.5rem;
+    border-top: 1px solid grey
+}
+.copyright{
+    float: left
+}
+.copyright a{
+    color: white;
+    text-decoration: none
+}
+.twitter, .facebook, .instagram, .youtube, .linkedin{
+    display: inline-block;
+    color: white;
+    float: right;
+    width: 25px;
+    height: 25px;
+    /* border: 1px solid white; */
+    margin-left: 0.5vw;
+    cursor: pointer;
+}
+.footer:before, .footer:after { 
+    content: ""; 
+    display: table; 
+    clear: both; 
+}
+.twitter{
+    background: url('../image/twitter.png');
+    background-size: cover;
+    border-radius: 30%;
+}
+.twitter:hover{
+    background: url('../image/twitter-color.png');
+    background-size: cover;
+    border-radius: 30%;
+}
+.facebook{
+    background: url('../image/facebook.png');
+    background-size: contain;
+    border-radius: 30%;
+}
+.facebook:hover{
+    background: url('../image/facebook-color.png');
+    background-size: contain;
+    border-radius: 30%;
+}
+.instagram{
+    background: url('../image/instagram.png');
+    background-size: contain;
+    border-radius: 30%;
+}
+.instagram:hover{
+    background: url('../image/instagram-color.png');
+    background-size: contain;
+    border-radius: 30%;
+}
+.youtube{
+    background: url('../image/youtube.png') center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 30%;
+}
+.youtube:hover{
+    background: url('../image/youtube-color.png') center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 30%;
+}
+.linkedin{
+    background: url('../image/linked.png') center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 30%;
+}
+.linkedin:hover{
+    background: url('../image/linked-color.png') center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 30%;
+}
+
+
+
+/* -----------------------------------------*/
+
+
+
+/* ANIOMATION */
+.show {
+    animation-name: showAnimation;
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    }
+.active{
+    animation-name: activeAnimation;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    }
+    
+.hide{
+    animation-name: hideAnimation;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+
+
+/* @KEYFRAMES */
+@keyframes showAnimation {
+    0%{
+        transform: translate(-70vw, 0vh);
+    }
+    100%{
+        transform: translate(0vw, 0vh);
+    }
+}
+@keyframes hideAnimation {
+    0% {
+        transform: translate(0vw, 0vh);
+    }
+
+    100% {
+        transform: translate(-150%, 0%);
+    }
+}  
+
+@keyframes activeAnimation {
+    0% {
+        transform: translate(0vh, 0vh);
+    }
+    50% {
+        transform: translate(100%, 0vh);
+    }
+    100% {
+        position: absolute;
+        top: 15%;
+        left: 0%
+        /* transform: translate(30%, -40vh); */
+    }
+}
+@keyframes actuallyViewAnimation {
+    0% {
+        transform: translate(0%, 100vh);
+    }
+    100% {
+        position: absolute;
+        top: 27%;
+        left: 0%;
+        /* transform: translate(0%, 0%); */
+    }
+}  
+@keyframes actuallyViewHideAnimation {
+    0% {
+        position: absolute;
+        top: 30%;
+        left: 0%;
+    }
+    100% {
+        position: absolute;
+        bottom: 0%;
+        left: 0%;
+        transform: translate(0%, 100vh);
+        /* transform: translate(0%, 0%); */
+    }
+}  
+@keyframes showLoginUser {
+    0% {
+        position: absolute;
+        right: -50%;
+        top: -28%;
+    }
+    100% {
+        position: absolute;
+        right: 0%;
+        top: -28%;
+    }
+}
+
+
+
+/* MEDIA QUERY */
+@media(max-width: 320px){
+    .contactInfo{
+        margin-top: 0
+    }
+    .footer_formularz input{
+        height:1.2rem
+    }
+}
+@media (min-width: 501px){
+    .worksAllImg {
+        flex-wrap: wrap;
+        justify-content: space-around;
+        flex-direction: row;
+        align-content: space-around;
+    }
+    .worksAllImg div a{
+        display: block;
+        margin-bottom: 1vw;
+        margin-top: 1vw
+    }
+   
+}
+@media (max-width: 600px){
+    .all{
+        width: 100%;
+    }
+    .navigation, .footer{
+        width: 90%
+    }
+    .textHeader{
+        font-size: 2rem
+    }
+    @keyframes showAnimation {
+        0%{
+            transform: translate(-100%, 0vh);
+        }
+        100%{
+            transform: translate(-35vw, 0vh);
+        }
+    }
+    @keyframes showLoginUser {
+        0% {
+            position: absolute;
+            right: -50%;
+            top: -30%;
+        }
+        100% {
+            position: absolute;
+            right: 3%;
+            top: -30%;
+        }
+    }
+    .btnShow{
+        width: 20%;
+        padding: 2vw
+    }
+    .companyImg1, .companyImg2, .companyImg3{
+        width: 80%;
+    }
+    .teamsLine{
+        margin: 5vw auto
+    }
+    .nameSubTitle{
+        font-size: 0.5rem;
+        
+    }
+}
+@media (min-width: 800px){
+    .loginHeadSign, .loginHeadLogin{
+        font-size: 1.2rem;
+        padding: 1vw
+    }
+    .headerLogin{
+        width: 40%;
+    }
+    .loginForm label{
+    font-size: 1.2rem;
+    }
+    .loginSend, .teamsBtn, .contactBtn{
+        padding: 1vw
+    }
+    .teams1, .teams2, .teams3 {
+        font-size: 1rem
+    }
+    .worksAllImg {
+        margin-top: 2vw
+    }
+    .worksAllImg div{
+        width: 20%;
+        margin-left: 1px;
+    }
+    .worksAllImg img{
+        width: 50%;
+        height: 50%;
+    }
+    .headerContact{
+        margin-top: 3rem
+    }
+    .allContactElem, .footer_formularz {
+        display: inline-block;
+        width: 49%;
+        text-align: center
+    }
+    .contactInfoHeader{
+        margin: 0 auto
+    }
+    .footer_formularz label {
+        width: 60%;
+        text-align: center
+    }
+    .footer_formularz input{
+        height: 2rem
+    }
+    .footer_formularz textarea {
+        width: block;
+        width: 100%;
+    }
+    .contactInfo{
+        margin: 0 auto;
+        margin-bottom: 3rem;
+        margin-top: 0;
+        font-size: 1.2rem
+    }
+    .contactInfo img{
+        width: 2rem;
+        height: 2rem
+    }
+    .footer_formularz  {
+        text-align: center;
+        margin: 0 auto;
+    }
+    .contactBtn{
+        display: block;
+        text-align: center;
+        margin: 0 auto;
+        float: none;
+        margin-top: 0.5rem;
+        height: auto
+    }
+   
+}
+@media (min-width: 1000px){
+    .companyImg1, .companyImg2, .companyImg3{
+        width: 28%;
+        margin-left: 1vw
+    }
+    .headerLogin{
+        width: 30%;
+    }
+    .teamsJoin{
+        margin-top: 2vw
+    }
+    .contactInfo{
+        margin-bottom: 4rem;
+    }
+}

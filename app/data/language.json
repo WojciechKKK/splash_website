@@ -1,0 +1,22 @@
+{
+    "en":{
+        "header":["login", "about", "teams", "works", "contact"],
+        "login": ["login", "sign up", "username", "password", "repeat password"],
+        "about": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore eos molestias quod sint ipsum possimus temporibus officia iste perspiciatis consectetur in fugiat repudiandae cum. Totam cupiditate nostrum ut neque.",
+        "back": "back",
+        "teams": ["Lorem ipsum dolor sit amet proint", "Become part of our dream team!","Join us!"],
+        "works": ["our works", "See all project"],
+        "contact": ["Give us a good news", "Street Name & Number, Town, Postcode", "+48 234 465 789", "info@domain.com"],
+        "form": ["Your name", "Your e-mail", "Message", "Send"]
+    },
+    "pl":{
+        "header":["zaloguj", "o nas", "zespół", "projekty", "kontakt"],
+        "login": ["zaloguj", "zarejstruj", "nazwa użytkownika", "hasło", "powtórz hasło"],
+        "about": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore eos molestias quod sint ipsum possimus temporibus officia iste perspiciatis consectetur in fugiat repudiandae cum. Totam cupiditate nostrum ut neque.",
+        "back": "powrót",
+        "teams": ["Nasz zespół ekspertów", "Bądź częścią naszego zespołu!", "Dołącz do nas!"],
+        "works": ["nasze projekty", "Zobacz wszystkie"],
+        "contact": ["Przekaż nam swoja opinię", "Ulica & nr, Miasto, Kod pocztowy", "+48 234 465 789", "info@domena.pl"],
+        "form": ["Imię", "Adres e-mail", "Wiadomość", "Wyślij"]
+    }
+}
