@@ -25,6 +25,19 @@ class Design extends Component{
     componentDidMount = () => {
         let allHeader = document.querySelectorAll('#header'); 
         allHeader.forEach(el => el.classList.add('show'));
+        allHeader.forEach((el,key) => {
+            if(key == 0){
+                el.classList.add('showAnimationUp');
+            } else if(key == 1){
+                el.classList.add('showAnimationRight');
+            } else if(key == 2){
+                el.classList.add('showAnimationCenter');
+            } else if(key == 3){
+                el.classList.add('showAnimationLeft')
+            } else if(key ==4){
+                el.classList.add('showAnimationDown')
+            }
+        });
     }
     
     //show or hide headers for Header Comp

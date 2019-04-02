@@ -64,22 +64,25 @@ class HeaderLogin extends Component{
         const { text } = this.props
         return(
             <div className="headerLogin">
+            <div className="loginAsk"><h4>{text[5]}</h4><button onClick={this.setSignUp}className="btnStart">{text[6]}</button></div>
+
+            <div className="headerLoginInside">
               {
                 login
                 ? <p>{usernameText}<br />{password}</p>
-                : <div>
+                : <div className="loginForm1">
                     <div onClick={this.setLogin} className={`loginHeadLogin ${setLoginDiv}`}>{text[0]}</div>
                     <div onClick={this.setSignUp} className={`loginHeadSign ${setSignUpDiv}`}>{text[1]}</div>
                     <div className="loginForm">
                         <label htmlFor="username">{text[2]}</label>
-                        <input id="username" type="text" onChange={this.handleUsernameChange} value={usernameText} maxLength={15}></input>
+                        <input id="username" type="text" onChange={this.handleUsernameChange} value={usernameText} maxLength={15} placeholder="name@gmail.com"></input>
                         <label htmlFor="password">{text[3]}</label>
-                        <input id="password" type="password" onChange={this.handlePasswordChange} value={password} maxLength={15}></input>
+                        <input id="password" type="password" onChange={this.handlePasswordChange} value={password} maxLength={15} placeholder="Enter your password"></input>
                         {
                             info == 'sign up'
                             ? <div>
                                 <label htmlFor="password2">{text[4]}</label>
-                                <input id="password2" type="password" onChange={this.handlePasswordRepChange} value={passwordRepeat}></input>
+                                <input id="password2" type="password" onChange={this.handlePasswordRepChange} value={passwordRepeat}  placeholder="Repeat your password"></input>
                             </div>
                             : null
                         }
@@ -99,6 +102,8 @@ class HeaderLogin extends Component{
                 : null
             }
             </div>
+            </div>
+            
         )
     }
 }

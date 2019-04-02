@@ -26,7 +26,6 @@ body {
 .all{
     width: 90%;
     margin: 0 auto;
-    
 }
 .container{
     text-align:center;
@@ -37,7 +36,7 @@ body {
     flex-direction: column;
     overflow: hidden;
     height: 100vh;
-    width: 100%;
+    /* width: 100vw; */
     position: relative;
 }
 
@@ -62,7 +61,8 @@ body {
     text-transform: uppercase;
     /* line-height: 0.8rem */
     position: relative;
-    text-align: center
+    text-align: center;
+    cursor: pointer;
 }
 
 .logoDot{
@@ -137,7 +137,8 @@ body {
 }
 .textHeader a:hover {
     cursor: pointer;
-    padding: 0.1vw
+    padding: 0.1vw;
+
 }
 .header1, .header2, .header3, .header4, .header5, .header6{
     width: 100%;
@@ -183,6 +184,7 @@ body {
     width: 100%;
     height: 65%;
     text-align: center;
+    margin-top: 3rem;
 }
 .actuallyViewHide{
     animation-name: actuallyViewHideAnimation;
@@ -198,26 +200,62 @@ body {
 
 
 /*HeaderLogin Component */
-.headerLogin{
-    width: 70%;
+.loginAsk{
+    /* margin-top: 3rem; */
+    float: left;
+    width: 40%;;
+    display: inline-block;
+    text-align: left;
+    /* border-right: 1px solid white */
+}
+.loginAsk h4{
+    margin-top: 1rem;
+    font-size: 2.5rem
+}
+.btnStart{
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    padding: 0.7rem;
+    color: white;
+    border: 1px solid #97b1a7;
+    background: #97b1a7;
+    cursor: pointer;
+    font-size: 1.2rem
+}
+.headerLoginInside{
+    display: inline-block;
+    width: 40%;
     background: white;
     border-radius: 10px;
     color: black;
     text-align: center;
     margin: 0 auto;
 }
+.headerLogin{
+    width: 60%;
+    text-align: center;
+    margin: 0 auto;
+}
+
 .loginForm{
-    margin-top: 3vh;
+    /* margin-top: 3vh; */
+    margin: 0 auto;
+    width: 80%;
+
 }
 .headerLogin label {
     display: block;
     margin-top: 2vh;
     margin-bottom: 0.5vh;
+    font-size: 0.8rem;
+    text-align: left
 }
 .headerLogin input {
     display: inline-block;
     height: 4vh;
-    border: 1px solid grey
+    border: 1px solid grey;
+    padding: 1.2rem;
+    width: 100%;
 }
 .activeHeader{
     color: red;
@@ -518,28 +556,53 @@ body {
 
 /* ButtonHide Component */
 .btnShow{
-    width: 10%;
+    position: absolute;
+    top:-25%;
+    right: 0;
+    width: 5%;
     background: black;
     color: white;
     cursor: pointer;
-    border: 2px solid white;
+    border: 2px solid black;
     border-radius: 10px;
-    padding: 1vw;
+    /* padding: 1vw; */
     text-transform: capitalize;
+    font-size: 1.2rem;
+
+    /* background: url('../image/show.png'); */
+    /* background-size: cover; */
+    border-radius: 1px solid white;
     /* position: absolute;
     left: 50%; 
     bottom:0;
     transform: translate(-50%, -50%); */
-    margin-top: 2vw
+    margin-top: 2vw;
+
+    animation-name: showBtnChange;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 0.5s
 
 }
 .btnShow:hover{
-    color: black;
+    /* color: black;
     background: white;
-    border: 2px solid white
+    border: 2px solid white */
+    color: red;
+ 
 }
 
-
+@keyframes showBtnChange{
+    0%{
+    }
+    50%{
+        
+    }
+    100%{
+        transform: rotate(360deg)
+    }
+}
 
 /* Footer Component */
 .footer{
@@ -548,6 +611,7 @@ body {
     padding: 1rem 0; 
     color: white;
     bottom: 0;
+    z-index: 0;
     font-size: 0.5rem;
     border-top: 1px solid grey
 }
@@ -633,7 +697,6 @@ body {
 /* -----------------------------------------*/
 
 
-
 /* ANIOMATION */
 .show {
     animation-name: showAnimation;
@@ -641,6 +704,52 @@ body {
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
     }
+/* .show2{
+    animation-name: showAnimation2;
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+} */
+
+
+.showAnimationUp{
+    animation-name: showAnimationUp;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+.showAnimationRight{
+    animation-name: showAnimationRight;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+
+}
+.showAnimationRight{
+    animation-name: showAnimationRight;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+.showAnimationDown{
+    animation-name: showAnimationDown;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+.showAnimationLeft{
+    animation-name: showAnimationLeft;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+.showAnimationCenter{
+    animation-name: showAnimationCenter;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
 .active{
     animation-name: activeAnimation;
     animation-duration: 1s;
@@ -658,6 +767,7 @@ body {
 
 
 /* @KEYFRAMES */
+
 @keyframes showAnimation {
     0%{
         transform: translate(-70vw, 0vh);
@@ -666,6 +776,59 @@ body {
         transform: translate(0vw, 0vh);
     }
 }
+/* @keyframes showAnimation2 {
+    0%{
+        transform: translate(0vw, 0vh);
+    }
+    100%{
+        transform: translate(0vw, 0vh);
+    }
+} */
+
+@keyframes showAnimationUp {
+    0%{
+        transform: translate(0vw, -70vh);
+    }
+    100%{
+        transform: translate(0vw, 0vh);
+    }
+}
+@keyframes showAnimationRight {
+    0%{
+        transform: translate(70vw, 0vh);
+    }
+    100%{
+        transform: translate(0vw, 0vh);
+    }
+}
+@keyframes showAnimationDown {
+    0%{
+        transform: translate(0vw, 70vh);
+    }
+    100%{
+        transform: translate(0vw, 0vh);
+    }
+}
+@keyframes showAnimationLeft {
+    0%{
+        transform: translate(-70vw, 0vh);
+    }
+    100%{
+        transform: translate(0vw, 0vh);
+    }
+}
+@keyframes showAnimationCenter {
+    0%{
+        transform: translate(0vw, 0vh);
+        opacity: 0
+    }
+    100%{
+        transform: translate(0vw, 0vh);
+        opacity:1
+    }
+}
+
+
 @keyframes hideAnimation {
     0% {
         transform: translate(0vw, 0vh);
@@ -752,6 +915,7 @@ body {
         margin-top: 1vw
     }
    
+   
 }
 @media (max-width: 600px){
     .all{
@@ -763,9 +927,44 @@ body {
     .textHeader{
         font-size: 2rem
     }
+    .headerLogin input{
+        width: 100%;
+
+    }
+    .headerLogin{
+        width: 90%
+    }
+    .loginAsk h4{
+        font-size: 1.3rem;
+        
+    }
+    .loginAsk{
+        width: 30%;
+
+    }
+    .headerLoginInside{
+        width: 60%
+    }
+    .btnStart{
+        font-size: 1rem;
+        padding: 0.5rem
+
+    }
+    .actuallyView{
+        margin-top: 1rem
+    }
+
     @keyframes showAnimation {
         0%{
             transform: translate(-100%, 0vh);
+        }
+        100%{
+            transform: translate(-35vw, 0vh);
+        }
+    }
+    @keyframes showAnimation2 {
+        0%{
+            transform: translate(100%, 0vh);
         }
         100%{
             transform: translate(-35vw, 0vh);
@@ -784,8 +983,10 @@ body {
         }
     }
     .btnShow{
-        width: 20%;
-        padding: 2vw
+        width: 7%;
+        padding: 2vw;
+        top: -30%;
+        right: 5%
     }
     .companyImg1, .companyImg2, .companyImg3{
         width: 80%;
@@ -804,11 +1005,14 @@ body {
         padding: 1vw
     }
     .headerLogin{
-        width: 40%;
+        width: 100%;
     }
     .loginForm label{
-    font-size: 1.2rem;
+    /* font-size: 1.2rem; */
     }
+    .headerLogin input{
+        /* width: 100% */
+        }
     .loginSend, .teamsBtn, .contactBtn{
         padding: 1vw
     }
@@ -878,7 +1082,7 @@ body {
         margin-left: 1vw
     }
     .headerLogin{
-        width: 30%;
+        width: 60%;
     }
     .teamsJoin{
         margin-top: 2vw
