@@ -492,21 +492,21 @@ body {
 .allContactElem{
     width: 100%
 }
-.contactInfo{
+/* .contactInfo{
     margin-top: 1rem;
     color: white
-}
-.contactInfo img {
+} */
+/* .contactInfo img {
     width: 1rem;
     height: 1rem;
     margin-right: 1rem;
-}
+} */
 .footer_formularz {
     width: 100%;
     text-align: left
 }
 .contactInfoHeader{
-    color: green;
+    color: #97b1a7;
     font-weight: 700;
     margin: 2rem 0 0.5rem 0 ;
     font-size: 0.9rem
@@ -917,7 +917,12 @@ body {
    
    
 }
+@media (max-width: 940px){
+  
+}
 @media (max-width: 600px){
+    
+
     .all{
         width: 100%;
     }
@@ -999,14 +1004,24 @@ body {
         
     }
 }
+@media (max-width: 799px){
+    .iframe{
+        display: none;
+
+    }
+}
 @media (min-width: 800px){
     .loginHeadSign, .loginHeadLogin{
         font-size: 1.2rem;
         padding: 1vw
     }
+   
+    
+
     .headerLogin{
         width: 100%;
     }
+    
     .loginForm label{
     /* font-size: 1.2rem; */
     }
@@ -1038,12 +1053,17 @@ body {
         width: 49%;
         text-align: center
     }
+    .allContactElem{
+    float: left
+}
     .contactInfoHeader{
-        margin: 0 auto
+        margin: 0 auto;
+        margin-bottom: 1rem;
+        font-size: 2rem
     }
     .footer_formularz label {
         width: 60%;
-        text-align: center
+        text-align: left
     }
     .footer_formularz input{
         height: 2rem
@@ -1052,7 +1072,7 @@ body {
         width: block;
         width: 100%;
     }
-    .contactInfo{
+    /* .contactInfo{
         margin: 0 auto;
         margin-bottom: 3rem;
         margin-top: 0;
@@ -1061,7 +1081,7 @@ body {
     .contactInfo img{
         width: 2rem;
         height: 2rem
-    }
+    } */
     .footer_formularz  {
         text-align: center;
         margin: 0 auto;
@@ -1087,7 +1107,7 @@ body {
     .teamsJoin{
         margin-top: 2vw
     }
-    .contactInfo{
+    /* .contactInfo{
         margin-bottom: 4rem;
-    }
+    } */
 }
