@@ -24,4 +24,4 @@ $ npm start
 
 To run this project, use below link:
 
-https://wojciechkkk.github.io/splash-website/index.html
+https://wojciechkkk.github.io/splash_website/index.html
