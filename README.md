@@ -1,4 +1,4 @@
-## Splash_website - project in React - in progress
+## Splash_website - project in React
 #### Table of contents
 * [General info](#general-info)
 * [Technologies](#technologies)
